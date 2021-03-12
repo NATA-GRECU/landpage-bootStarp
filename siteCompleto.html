@@ -15,7 +15,10 @@
             height: 50px;
         }
         body{
-            background-color: #8c2727;
+            background-color: #8c2727; 
+        }
+        html{
+          scroll-behavior: smooth;
         }
         
     </style>
@@ -38,10 +41,13 @@
               <a class="nav-link" href="#">HOME <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PRODUTOS</a>
+              <a class="nav-link" href="#produtos">PRODUTOS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">QUEM SOMOS NÓS</a>
+              <a class="nav-link" href="#dica">DICAS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contato">QUEM SOMOS NÓS</a>
               </li>
             <li class="nav-item dropdown d-flex justify-content-center">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,7 +95,7 @@
       <!--Carrousel-->
 
       <!--Jumbotrom-->
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid" id="produtos">
         <div class="container">
           <h1 class="display-4 text-center">PRODUTOS EM DESTAQUE</h1>
           <p class="lead text-center">Confira os melhores preços do mercado!</p>
@@ -151,7 +157,7 @@
       <!--Coluna de cards-->
 
       <!--Texto e video-->
-      <div class="text-center text-light mt-5">
+      <div id="dica" class="text-center text-light mt-5">
       <h2>Dica do dia</h2>
         </div>
         <div class="row mt-5 mb-5">
@@ -181,7 +187,7 @@
      
      <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center text-light">Entre em contato conosco</h3>
+            <h3 id="contato" class="text-center text-light">Entre em contato conosco</h3>
         </div>
      </div>
 
