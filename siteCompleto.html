@@ -15,11 +15,23 @@
             height: 50px;
         }
         body{
-            background-color: #8c2727; 
+          background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(221,221,221,1) 0.1%, #bbb 90% );
         }
         html{
           scroll-behavior: smooth;
         }
+        .navbar {
+          background-color: #FF2525;
+background-image: linear-gradient(147deg, #FF2525 0%, #ffbbbb 74%);
+        }
+        .jumbotron {
+          background-color: #e65245;
+        }
+        .jumbotron-1 {
+          background-color: #e43a15;
+        }
+
+
         
     </style>
 </head>
@@ -144,12 +156,12 @@
 
       <!--Coluna de cards-->
       <div class="container">
-          <div class="text-center mb-5 text-light">
+          <div class="text-center mb-5 text-dark">
               <h2>OFERTAS!</h2>
           </div>
 
-        <div class="card-columns row p-3 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
+        <div class="card-columns row p-3 d-flex justify-content-center ">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
             <img class="card-img-top" src="assests/img/notebook.png" alt="Notebook Samsung">
             <div class="card-body">
               <h5 class="card-title">Notebook IntelCore Samsumg</h5>
@@ -162,7 +174,7 @@
           </div>
        
         
-          <div class="card" style="width: 18rem;">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
             <img class="card-img-top" src="https://www.casanissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/m/o/mouse_hyperx_pulsefire_surge.jpg" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title">Mouse gamer HyperX</h5>
@@ -176,7 +188,7 @@
         
       
 
-        <div class="card" style="width: 18rem;">
+        <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
           <img class="card-img-top" src="https://images.tcdn.com.br/img/img_prod/642446/gabinete_gamer_hayom_gb1700_rgb_lateral_em_vidro_3257_1_20201214200514.jpg" alt="Imagem de capa do card">
           <div class="card-body">
             <h5 class="card-title text-center">Gabinetes</h5>
@@ -185,7 +197,7 @@
         </div>
     </div>
 
-    <div class="card p-3">
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
         <div classe="text-center text-light">
             <h2>Feedbacks</h2>
         </div>
@@ -202,7 +214,7 @@
 
       <!--Texto e video-->
         <!--Jumbotrom-->
-        <div class="jumbotron jumbotron-fluid mt-5" id="dica">
+        <div class="jumbotron-1 jumbotron-fluid shadow p-3 mb-5  rounded " id="dica">
           <div class="container">
             <h1 class="display-4 text-center">Dica do dia</h1>
             <p class="lead text-center">Todo dia uma dica nova para você</p>
@@ -210,8 +222,8 @@
         </div>
         <!--Jumbotrom-->
 
-        <div class="row mt-5 mb-5">
-            <div class="col-md-6 bg-light ">
+        <div class="row mt-5 mb-5 ">
+            <div class="col-md-6 bg-light shadow-lg p-3 mb-5 bg-white rounded">
                 <h3>Conheça a melhor máquina custo benefício</h3>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. In hic ullam itaque.
@@ -237,7 +249,7 @@
      
      <div class="row">
         <div class="col-md-12">
-            <h3 id="contato" class="text-center text-light">Entre em contato conosco</h3>
+            <h3 id="contato" class="text-center text-dark">Entre em contato conosco</h3>
         </div>
      </div>
 
@@ -246,7 +258,7 @@
             <form>
                 <div class="form-group">
                   <label for="email">Endereço de email:</label>
-                  <input type="email" class="form-control" id="email" onkeyup="verificaEmail()" placeholder="nome@exemplo.com" >
+                  <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup="verificaEmail()">
                   <div id="txtEmail"></div>
                 </div>
 
@@ -292,7 +304,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <p class="text-center text-light">
+                    <p class="text-center text-dark">
                         Todos os direitos reservados: Natã Grecu &copy
                     </p>
                 </div>
@@ -318,6 +330,7 @@
 
 
      <!--Scripts necessarios para utilização dos codigos JS do Bootstrap-->
+     
      <script src="assests/js/script.js"></script>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
